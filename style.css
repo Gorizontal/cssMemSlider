@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(206, 234, 175);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center
+}
+
+
+.wrapper-content{
+    margin: 10px 150px 20px 150px;
+}
+
+
+
+.mem-slider{
+    overflow: hidden;
+    border: 5px solid black;
+    height: 600px;
+    border-radius: 60px;
+}
+
+
+.sliderS {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.mem {
+    
+    width: 25%;
+    transition: all .7s ease;
+}
+
+.mem img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-area {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.navigation {
+    display: flex;
+    max-width: 200px;
+    max-height: 100px;
+    align-items:flex-end;
+   
+}
+
+
+
+.nav-button1, .nav-button2, .nav-button3, .nav-button4 {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    background: rgb(92, 196, 198);
+    border-radius:14px;
+    border: 4px solid rgb(92, 196, 198);
+    
+}
+
+.nav-button1:hover, .nav-button2:hover, .nav-button3:hover, .nav-button4:hover {
+    opacity: 0.8;
+    border-color: rgb(222, 0, 247) ;
+    cursor: pointer;
+    background: rgb(222, 0, 247);
+    border-radius:10px;
+    transition: .5s;
+    transform:  rotate(45deg);
+  
+ 
+}
+
+
+
+
+
+input[name='INPUT']{
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+
+
+
+.text-area{
+    overflow: hidden;
+}
+
+
+.text {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.text-mem {
+    
+    width: 25%;
+    
+}
+
+p{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+}
+
+
+
+
+
+#m1:checked ~ .mem-slider .sliderS .R1 {
+    margin-left: 0;
+} 
+#m2:checked ~ .mem-slider .sliderS .R1 {
+    margin-left: -25%;
+}
+#m3:checked ~ .mem-slider .sliderS .R1 {
+    margin-left: -50%;
+}
+#m4:checked ~ .mem-slider .sliderS .R1 {
+    margin-left: -75%;
+} 
+
+
+#m1:checked ~ .navigation-area .navigation .nav-button1 {
+    background: rgb(206, 234, 175);
+    border-radius:14px;
+} 
+#m2:checked ~ .navigation-area .navigation .nav-button2 {
+    background: rgb(206, 234, 175);
+    border-radius:14px;
+} 
+#m3:checked ~ .navigation-area .navigation .nav-button3 {
+    background: rgb(206, 234, 175);
+    border-radius:14px;
+} 
+#m4:checked ~ .navigation-area .navigation .nav-button4 {
+    background: rgb(206, 234, 175);
+    border-radius:14px;
+    
+} 
+
+
+
+#m1:checked ~ .text-area .text .T1 {
+    margin-left: 0;
+    transition: .4s;
+} 
+#m2:checked ~ .text-area .text .T1 {
+    margin-left: -25%;
+    transition: .4s;
+}
+#m3:checked ~ .text-area .text .T1 {
+    margin-left: -50%;
+    transition: .4s;
+}
+#m4:checked ~ .text-area .text .T1 {
+    margin-left: -75%;
+    transition: .4s;
+} 
