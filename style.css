@@ -178,7 +178,7 @@ p{
 } 
 
 
- @media (max-width: 800px) {
+ @media (max-width: 600px) {
 
 .text-area{
     margin-top: 1rem;
@@ -229,7 +229,7 @@ p{
         max-width: 6rem;
     }
 .navigation-area {
-    margin-top: 0.9rem;
+    margin-top: 1rem;
     
 }
     
