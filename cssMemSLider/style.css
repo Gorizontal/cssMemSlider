@@ -81,6 +81,9 @@ body {
     transform:  rotate(45deg);
 }
 
+.nav-button1:active, .nav-button2:active, .nav-button3:active, .nav-button4:active{
+    background:rgb(17, 210, 213)
+}
 
 .button-cursor{
     display: flex;
@@ -181,7 +184,7 @@ p{
  @media (max-width: 600px) {
 
 .text-area{
-    margin-top: 1rem;
+    margin-top: 2rem;
     transition: .6s;
     max-width: 18rem;
 }
